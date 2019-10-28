@@ -3,14 +3,14 @@
 
   $GLOBALS['config'] = array(
     'mysql' => array(
-      'host' => '127.0.0.1',
-      'username' => 'root',
+      'host' => '',
+      'username' => '',
       'password' => '',
-      'dbname' =>   'oophp'
+      'dbname' =>   ''
     ),
     'seession' => array (
-      'session_name' => 'user',
-      'token_name' => 'token'
+      'session_name' => '',
+      'token_name' => ''
     )
   );
 
