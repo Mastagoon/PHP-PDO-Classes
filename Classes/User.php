@@ -21,7 +21,8 @@ Class user {
 
   public function find($user = null) {
     if($user) {
-       $field = is_int($user) ? 'id' : 'phone_number';
+	   $field = is_numeric($user) ? 'id' : 'email';
+	   //echo "<br>".$field."<br>";
        $result = $this->_db->get('users',array($field ,'=', $user));
        if($result->count()) {
          $this->_data = $result->first();

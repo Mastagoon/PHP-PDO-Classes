@@ -9,7 +9,7 @@ It also automatically loads the classes using spl_autoload function
       'host' => '127.0.0.1',
       'username' => 'root',
       'password' => '',
-      'dbname' =>   'application_db'
+      'dbname' =>   'rawaz'
 	)
   );
 

@@ -23,9 +23,9 @@ Class Input {
 
   public static function get($item) {	//simply returns the item from POST or GET
     if(isset($_POST[$item])) {
-      return $_POST[$item];
+      return escape($_POST[$item]);
     } else if(isset($_GET[$item])) {
-      return $_GET[$item];
+      return escape($_GET[$item]);
     } else {
       return "";
     }
